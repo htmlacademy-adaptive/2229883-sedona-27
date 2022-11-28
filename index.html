@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title> Sedona</title>
 </head>
-<body>
 <body class ="page__body">
   <header class="main-header">
     <a class="main-header__logo">
@@ -43,19 +42,23 @@
     <div class="welcome-anthem">
       <img class="welcome-logo" src="images/main-welcome.svg" width="458" height="352" alt="Логотип Welcome.">
 </div>
-<section class="sedona-town">
-  <h1>Седона-небольшой городок в Аризоне,
-    <br> заслуживающий большего!
+<section class="intro">
+  <h1 class="intro__title">Седона-небольшой городок в Аризоне,
+  заслуживающий большего!
 </h1>
-<p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+<p class="intro__discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 </section>
 <section class="advantages">
-  <div class="advantages__wrapper">
     <h2 class="visually-hidden">Наши преимущества</h2>
     <ul class="advantages__list">
       <li class="advantages__item">
+        <div class="advantage__true-town">
         <h3 class="advantages__title">Настоящий городок</h3>
         <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class="advantage__true-town-photo">
+        <img class="advantage__photo" src="" width="" height="3" alt="Фото города.">
+      </div>
       </li>
       <li class="advantages__item">
         <h3 class="advantages__title">Жилье</h3>
@@ -70,8 +73,13 @@
         <p class="advantages__description">Не только китайского, но и местного производства!</p>
       </li>
       <li class="advantages__item">
+        <div class="advantage__devils-bridge-photo">
+          <img class="advantage__photo" src="" width="" height="3" alt="Фото моста.">
+        </div>
+        <div class="advantage__devils-bridge">
         <h3 class="advantages__title">Там есть мост дьявола</h3>
         <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      </div>
       </li>
       <li class="advantages__item">
         <h3 class="advantages__title">Небольшая площадь</h3>
@@ -86,45 +94,42 @@
         <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
     </ul>
-  </div>
 </section>
 <section class="booking">
-  <h2>Заинтересовались?</h2>
-<p>Укажите преполагаемые даты поездки, <br>
+  <h2 class="booking__title">Заинтересовались?</h2>
+<p class="booking__discription">Укажите преполагаемые даты поездки,
 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
- <a class="booking-navigation-link" href="hotels.html">Поиск гостиницы в Седоне<img src="#" alt="Отели.">
+ <a class="booking__navigation-link" href="hotels.html">Поиск гостиницы в Седоне<img src="#" alt="Отели.">
 </a>
 </section>
 <section class="map">
   <img src="" width="" height="" alt="Седона на карте">
 </section>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag">
+  <footer class="footer">
+      <div class="footer__hashtag">
         <span>#visitsedona</span>
       </div>
-      <div class="main-footer__social">
-          <li class="footer-social-item">
-               <a class="button" href="https://vk.com/htmlacademy">
+      <ul class="social">
+          <li class="social__item">
+               <a class="social__link" href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">vkontakte.</span>
                </a>
           </li>
-          <li class="footer-social-item">
-               <a class="button" href="https://t.me/htmlacademy">
+          <li class="social__item">
+               <a class="social__link" href="https://t.me/htmlacademy">
                     <span class="visually-hidden">telegram.</span>
                </a>
           </li>
-          <li class="footer-social-item">
-               <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="social__item">
+               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                     <span class="visually-hidden">youtube.</span>
                </a>
              </li>
-      </div>
-      <div class="main-footer__copyright">
+            </ul>
+      <div class="footer__copyright">
         <span class="visually-hidden">Разработано.</span>
       </div>
-    </div>
   </footer>
 </body>
 </html>
