@@ -1,0 +1,7 @@
+.advantages__item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
