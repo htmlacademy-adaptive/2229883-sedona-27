@@ -1,0 +1,165 @@
+.main-header {
+  color: #ffffff;
+  width: 320px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-header .site-list__item {
+  font-style: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.advantages {
+  width: 320px;
+  text-align: center;
+}
+.advantages .grey-back {
+  background-color: #eeeeee;
+}
+.advantages .grey-back h3 {
+  font-style: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages .grey-back .advantages__description {
+  font-style: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.advantages .advantages__true-town {
+  background-color: #81b3d2;
+  color: #ffff;
+}
+.advantages .advantages__true-town h3 {
+  font-style: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages .advantages__true-town .advantages__description {
+  font-style: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.map {
+  background-image: url("../img/images/index-map.jpg.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 300px;
+}
+.footer {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-anthem {
+  width: 320px;
+  height: 300px;
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: url("../img/images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: center;
+  padding-top: 90px;
+}
+.intro {
+  width: 320px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.intro h1 {
+  font-style: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.intro .intro__discription {
+  font-style: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+  box-sizing: border-box;
+}
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+/*.visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+      display: none;
+    } */
+.booking {
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px;
+}
+.booking h2 {
+  font-style: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.booking .booking__discription {
+  font-style: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
