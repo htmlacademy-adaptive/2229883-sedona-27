@@ -12,17 +12,43 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__main-logo">
-      <img src="img/images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+      <a href="http://localhost:3000/index.html">
+      <img src="images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+      </a>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-      </button>
-    </nav>
-  </header>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="http://localhost:3000/catalog.html" style="text-decoration: none;color: #fff" ;>
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="http://localhost:3000/form.html" style="text-decoration: none;color: #fff" ;>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/study" style="text-decoration: none;color: #fff" ;>
+                Html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <main class="main-container">
-    <div class="catalog-welcome">
-      <img class="main-logo" src="img/images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
-    </div>
+    <section class="catalog-welcome">
+      <img class="main-logo" src="images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
+    </section>
     <section class="intro">
       <h1 class="intro__title">
         Оставьте свой отзыв
@@ -30,93 +56,82 @@
       <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
-    <section class="personal-data">
+    <section class="form">
+      <form class="form__text-control" action="https://echo.htmlacademy.ru/" method="post">
       <h3 class="form__title">
         Представьтесь: </h3>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
         <span>Имя*:</span>
-        <p class="name-data">
+        <label class="form__name-data">
           <input type="text" class="enter-name" name="name" placeholder="Пётр">
-        </p>
+        </label>
         <span>Фамилия*:</span>
-        <p class="name-data">
+        <label class="form__name-data">
           <input type="text" class="enter-name" name="surname" placeholder="Пустота">
-        </p>
+        </label>
         <span>Отчество:</span>
-        <p class="name-data">
+        <label class="form__name-data">
           <input type="text" class="enter-name" name="lastname" placeholder="Викторович">
-        </p>
-      </form>
-    </section>
-    <section class="contacts">
+        </label>
       <h3 class="form__title">
         Контактная информация: </h3>
-      <form class="contacts-form" action="https://echo.htmlacademy.ru/" method="post">
         <span>Контактный телефон*:</span>
-        <p class="phone">
+        <lalebel class="form__phone">
           <input type="text" class="enter-phone" name="phone-number" placeholder="Введите телефон">
-        </p>
+        </label>
         <span>Электронная почта*:</span>
-        <p class="email">
+        <label class="form__email">
           <input type="text" class="enter-email" name="mail" placeholder="Введите e-mail">
-        </p>
+        </label>
       </form>
-    </section>
-    <section>
-      <fieldset class="experience-group" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="form__radio-control" action="https://echo.htmlacademy.ru/" method="post">
         <h3 class="form__title">
           Ваше общее впечатление: </h3>
-        <ul class="experience-filter__list">
-          <li class="experience-filter__item">
-            <label class="control">
-              <input class="control-input" type="radio" name="reaction" value="positive" checked>
+        <ul class="form__filter-list">
+          <li class="form__filter-item">
+            <label class="form__control">
+              <input class="form__control-input" type="radio" name="reaction" value="positive" checked>
               Скорее положительное
             </label>
           </li>
-          <li class="experience-filter__item">
-            <label class="control">
-              <input class="control-input" type="radio" name="reaction" value="negative">
+          <li class="form__filter-item">
+            <label class="form__control">
+              <input class="form__control-input" type="radio" name="reaction" value="negative">
               Скорее отрицательное
             </label>
           </li>
-          <li class="experience-filter__item">
-            <label class="control">
-              <input class="control-input" type="radio" name="reaction" value="none">
+          <li class="form__filter-item">
+            <label class="form__control">
+              <input class="form__control-input" type="radio" name="reaction" value="none">
               Затрудняюсь ответить
             </label>
           </li>
         </ul>
       </fieldset>
-    </section>
-    <section class="sights">
-      <form class="sights-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="sights-filter__sights-group">
+      <form class="form__checkbox-control" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form__checkbox">
           <h3 class="form__title">
             Посещённые достопримечательности: </h3>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="bridge" checked>
+          <label class="form__control">
+            <input class="form__control-input" type="checkbox" name="bridge" checked>
             Мост Дьявола
-            <input class="control-input" type="checkbox" name="hill" checked>
+            <input class="form__control-input" type="checkbox" name="hill" checked>
             Гора-Колокол
-            <input class="control-input" type="checkbox" name="park" checked>
+            <input class="form__control-input" type="checkbox" name="park" checked>
             Слайд-парк
-            <input class="control-input" type="checkbox" name="rocks">
+            <input class="form__control-input" type="checkbox" name="rocks">
             Красные скалы
           </label>
         </fieldset>
       </form>
-    </section>
-    <section class="emotions">
+      <form class="form__text-control" action="https://echo.htmlacademy.ru/" method="get">
       <h3 class="form__title">
         Опишите свои эмоции: </h3>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="comments">
-          <input type="text" class="enter-comments" name="comments" placeholder="Опишите подробно все свои восторги">
-        </p>
+          <textarea class="form__text-area" placeholder="Опишите подробно все свои восторги">
+          </textarea>
       </form>
-    </section>
-    <button class="button-feedback" type="submit">Оставить отзыв</button>
+    <button class="outro__navigation-link" type="submit" style="text-decoration: none;color: #fff";>Оставить отзыв </button>
     <span>:-Обязательные поля</span>
+  </section>
   </main>
     <footer class="footer">
       <div class="footer__hashtag">
