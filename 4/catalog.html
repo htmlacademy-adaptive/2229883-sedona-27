@@ -13,17 +13,43 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__main-logo">
-      <img src="img/images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+      <a href="http://localhost:3000/index.html">
+      <img src="images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+    </a>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
       </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="index.html";>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="http://localhost:3000/form.html";>
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/study";>
+              Html academy
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container">
-    <div class="catalog-welcome">
-      <img class="main-logo" src="img/images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
-    </div>
+    <section class="catalog-welcome">
+      <img class="main-logo" src="images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
+    </section>
     <section class="intro">
       <h1 class="intro__title">
         Фото и видео
@@ -35,7 +61,7 @@
       <ul class="catalog-photos__list">
         <li class="catalog-photos__item">
           <div class="catalog-photos__photos-photo">
-            <img class="catalog-photos__photo" src="img/images/photos/road.jpg" width="280px" height="280px"
+            <img class="catalog-photos__photo" src="images/photos/road.jpg" width="280px" height="280px"
               alt="Фото дороги.">
           </div>
           <h3 class="catalog-photos__title">Неродные просторы</h3>
@@ -44,7 +70,7 @@
         </li>
         <li class="catalog-photos__item">
           <div class="catalog-photos__photos-photo">
-            <img class="catalog-photos__photo" src="img/images/photos/plant.jpg" width="280px" height="280px"
+            <img class="catalog-photos__photo" src="images/photos/plant.jpg" width="280px" height="280px"
               alt="Фото растения.">
           </div>
           <h3 class="catalog-photos__title">Местная растительность</h3>
@@ -53,7 +79,7 @@
         </li>
         <li class="catalog-photos__item">
           <div class="catalog-photos__photos-photo">
-            <img class="catalog-photos__photo" src="img/images/photos/serpantine.jpg" width="280px" height="280px"
+            <img class="catalog-photos__photo" src="images/photos/serpantine.jpg" width="280px" height="280px"
               alt="Фото серпантина.">
           </div>
           <h3 class="catalog-photos__title">Дорога на север</h3>
@@ -62,7 +88,7 @@
         </li>
         <li class="catalog-photos__item">
           <div class="catalog-photos__photos-photo">
-            <img class="catalog-photos__photo" src="img/images/photos/bridge.jpg" width="280px" height="280px"
+            <img class="catalog-photos__photo" src="images/photos/bridge.jpg" width="280px" height="280px"
               alt="Фото моста дьявола.">
           </div>
           <h3 class="catalog-photos__title">Мост дьявола</h3>
@@ -75,7 +101,7 @@
       <h2 class="outro__title">Все еще сомневаетесь?</h2>
       <p class="outro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
-      <img class="outro-video" src="img/images/photos/video.jpg.jpg" width="280px" height="177px"
+      <img class="outro__video" src="images/photos/video.jpg.jpg" width="280px" height="177px"
         alt="видеопрезентация.">
     </section>
   </main>
@@ -104,6 +130,7 @@
       <span class="footer__text">Разработано</span>
     </div>
   </footer>
+</main>
 </body>
 
 </html>
