@@ -1,9 +1,38 @@
 .footer {
   text-align: center;
+  margin-top: 30px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 435px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 435px;
+    padding: 0px 120px;
+  }
 
   &__hashtag {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
+  }
+
+  &__social {
+    list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+    @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }

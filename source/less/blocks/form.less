@@ -1,0 +1,40 @@
+.form {
+  text-align: center;
+  display: grid;
+  &__group {
+    margin: 0px;
+
+    label,
+    input {
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 570px;
+    grid-template-columns: 280px 280px;
+    gap: 16px;
+
+    &__group {
+      margin: 0px;
+
+      label,
+      input {
+        display: block;
+      }
+    }
+
+    &__text-area {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__feedback-submit {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
+}

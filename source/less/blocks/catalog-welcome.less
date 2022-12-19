@@ -2,9 +2,18 @@
     height: 106px;
     color: #000000;
     background-color: #FFFFFF;
-    background-image: url("../images/catalog-background.jpg");
+    background-image: url("../images/index-background.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     text-align: center;
     padding-top: 108px;
-}
+
+    @media (min-width: @tablet-width) {
+      width: 570px;
+      padding-top: 77px;
+    }
+    @media (min-width: @desktop-width) {
+        width: 768px;
+      }
+
+    }
