@@ -1,0 +1,38 @@
+.page {
+  &__container {
+    background-color: #ffff;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
+  }
+
+  @media (min-width: @mobile-width-only) {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav {
+  @media (min-width: @tablet-width) {
+    &__toggle {
+      display: none;
+    }
+  }
+
+  &__list {
+    @media (min-width: @tablet-width) {
+      background-color: #ffff;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+  }
+}
+
+

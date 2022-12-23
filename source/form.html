@@ -3,18 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
 </head>
-
+<div class="page__container">
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__main-logo">
-      <a href="index.html">
+    <a class="main-header__main-logo" href="http://localhost:3000/index.html">
         <img src="images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona»">
-      </a>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -59,28 +58,33 @@
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <h3 class="form__title">
         Представьтесь: </h3>
-      <label class="form__label">Имя*:</label>
-      <label class="form__name-data">
-        <input type="text" class="form-input" name="name" placeholder="Пётр">
+      <p class="form__group">
+      <label class="form__name-data">Имя*:
+        <input type="text" class="form__form-input" name="name" placeholder="Пётр">
       </label>
-      <label class="form__label">Фамилия*:</label>
-      <label class="form__name-data">
-        <input type="text" class="form-input" name="surname" placeholder="Пустота">
+    </p>
+       <p class="form__group">
+      <label class="form__name-data">Фамилия*:
+        <input type="text" class="form__form-input" name="surname" placeholder="Пустота">
       </label>
-      <label class="form__label">Отчество:</label>
-      <label class="form__name-data">
-        <input type="text" class="form-input" name="lastname" placeholder="Викторович">
+    </p>
+      <p class="form__group">
+      <label class="form__name-data">Отчество:
+        <input type="text" class="form__form-input" name="lastname" placeholder="Викторович">
       </label>
+      </p>
       <h3 class="form__title">
         Контактная информация: </h3>
-      <label class="form__label">Контактный телефон*:</label>
-      <label class="form__phone">
-        <input type="text" class="form-input" name="phone-number" placeholder="Введите телефон">
+      <p class="form__label">
+      <label class="form__phone">Контактный телефон*:
+        <input type="text" class="form__form-input" name="phone-number" placeholder="Введите телефон">
       </label>
-      <label class="form__label">Электронная почта*:</label>
-      <label class="form__email">
-        <input type="text" class="form-input" name="mail" placeholder="Введите e-mail">
+      </p>
+      <p class="form__label">
+      <label class="form__email">Электронная почта*:
+        <input type="text" class="form__form-input" name="mail" placeholder="Введите e-mail">
       </label>
+      </p>
       <h3 class="form__title">
         Ваше общее впечатление: </h3>
       <ul class="form__filter-list">
@@ -123,7 +127,7 @@
           Опишите свои эмоции: </h3>
         <textarea class="form__text-area" placeholder="Опишите подробно все свои восторги">
           </textarea>
-        <button class="button" type="submit" ;>Оставить отзыв </button>
+        <button class="button feedback-submit" type="submit" ;>Оставить отзыв </button>
         <label class="form__label">:-Обязательные поля</label>
       </form>
   </main>
@@ -131,19 +135,19 @@
     <div class="footer__hashtag">
       <span>#visitsedona</span>
     </div>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="https://vk.com/htmlacademy">
+    <ul class="footer__social">
+      <li class="footer__item">
+        <a class="footer__link" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">vkontakte.</span>
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link" href="https://t.me/htmlacademy">
+      <li class="footer__item">
+        <a class="footer__link" href="https://t.me/htmlacademy">
           <span class="visually-hidden">telegram.</span>
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+      <li class="footer__item">
+        <a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">youtube.</span>
         </a>
       </li>
@@ -153,5 +157,5 @@
     </div>
   </footer>
 </body>
-
+</div>
 </html>
