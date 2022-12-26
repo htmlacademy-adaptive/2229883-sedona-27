@@ -13,19 +13,21 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__main-logo" href="http://localhost:3000/index.html">
+      <div class="main-header__main-logo-container">
       <img src="images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+    </div>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html";>
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a>
               Фото и видео
             </a>
@@ -129,6 +131,7 @@
     </div>
   </footer>
 </main>
+<script src="script.js"></script>
 </body>
 </div>
 </html>

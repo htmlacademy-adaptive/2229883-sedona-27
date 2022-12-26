@@ -12,10 +12,13 @@
 <div class="page__container">
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__main-logo-container">
     <a class="main-header__main-logo">
+      <div class="main-header__main-logo-container">
       <img src="images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+    </div>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
@@ -111,7 +114,8 @@
       </a>
     </section>
     <section class="map">
-      <img src="" width="" height="" alt="Седона на карте">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967219.8363975238!2d-112.44940083756063!3d35.92459829266354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672092969156!5m2!1sru!2sru"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> alt="Седона на карте"</iframe>
     </section>
   </main>
   <footer class="footer">
@@ -139,6 +143,7 @@
       <span class="footer__text">Разработано</span>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </div>
 </html>
