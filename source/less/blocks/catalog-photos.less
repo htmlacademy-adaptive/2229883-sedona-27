@@ -1,7 +1,18 @@
 .catalog-photos {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 200px;
+    }
+
 
   &__list {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     @media (min-width: @tablet-width) {
       display: flex;

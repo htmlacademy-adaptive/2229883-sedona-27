@@ -1,10 +1,20 @@
 .intro {
   text-align: center;
-  margin: 32px 18px 16px;
+  margin: 32px 0px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    margin-left: 124px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    margin-left: 357px;
+  }
+
 
   &__title {
     margin-bottom: 35px;

@@ -27,16 +27,23 @@
     border: #fff;
     box-shadow: none;
     min-width: 58px;
-    padding: 18px 17px;
+    padding: 18px 0 17px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
 .site-list__item {
   @media (min-width: @tablet-width) {
-   margin-right: 33px;
+
+    &:first-child {
+      margin-right: 0px;
+      margin-left: 40px;
+    }
 
    &:last-child {
-     margin-right: 0;
+     margin-right: 27px;
+     margin-left: 0;
    }
        &--active {
       position: relative;
@@ -69,4 +76,10 @@
      opacity: 0.3;
    }
  }
+}
+
+.site-list li:nth-child(3) {
+  @media (min-width: @tablet-width) {
+  margin-left: 150px;
+}
 }
