@@ -12,10 +12,13 @@
 <div class="page__container">
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__main-logo-container">
     <a class="main-header__main-logo">
+      <div class="main-header__main-logo-container">
       <img src="images/logos/sedona-headder.svg" width="185" height="96" alt="Логтип «Sedona».">
+    </div>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
@@ -58,47 +61,72 @@
       <h2 class="visually-hidden">Наши преимущества </h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--blueback">
+          <div class="advantages__description-container">
           <h3 class="advantages__title">Настоящий городок</h3>
+          <p class="advabtages__description-number">— №1 —</p>
           <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
           <div class="advantages__advatage-photo">
             <img class="advantages__photo" src="images/photos/index-view-1.jpg" width="520px" height="260px"
               alt="Фото города.">
           </div>
         </li>
+        <div class="advantages__greyback-container">
         <li class="advantages__item">
           <img class="logo" src="images\logos\house.svg" width="39" height="37" alt="Логотип дома.">
+          <div class="advantages__item-container">
           <h3 class="advantages__title">Жилье</h3>
           <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
         </li>
         <li class="advantages__item">
           <img class="logo" src="images\logos\food.svg" width="39" height="37" alt="Логотип дома.">
+          <div class="advantages__item-container">
           <h3 class="advantages__title">Еда</h3>
           <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
         </li>
         <li class="advantages__item">
           <img class="logo" src="images\logos\souveniers.svg" width="39" height="37" alt="Логотип дома.">
+          <div class="advantages__item-container">
           <h3 class="advantages__title">Сувениры</h3>
           <p class="advantages__description">Не только китайского, но и местного производства!</p>
+        </div>
         </li>
+      </div>
         <li class="advantages__item advantages__item--blueback">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           <div class="advantages__advantage-photo">
             <img class="advantages__photo" src="images/photos/index-view-2.jpg" width="520px" height="260px"
               alt="Фото моста.">
           </div>
+          <div class="advantages__description-container">
+          <h3 class="advantages__title">Там есть мост дьявола</h3>
+          <p class="advabtages__description-number">— №2 —</p>
+          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
         </li>
+        <div class="advantages__greyback-container">
         <li class="advantages__item advantages__item--greyback">
+          <div class="advantages__description-container">
           <h3 class="advantages__title">Небольшая площадь</h3>
+          <p class="advabtages__description-number">— №3 —</p>
           <p class="advantages__description">Все интересные места находятся очень близко</p>
+        </div>
         </li>
         <li class="advantages__item advantages__item--greyback">
+          <div class="advantages__description-container">
           <h3 class="advantages__title">Красивая дорога</h3>
+          <p class="advabtages__description-number">— №4 —</p>
           <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
         </li>
         <li class="advantages__item advantages__item--greyback">
+          <div class="advantages__description-container">
           <h3 class="advantages__title">Мало туристов</h3>
+          <p class="advabtages__description-number">— №5 —</p>
           <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+      </div>
         </li>
       </ul>
     </section>
@@ -111,7 +139,8 @@
       </a>
     </section>
     <section class="map">
-      <img src="" width="" height="" alt="Седона на карте">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967219.8363975238!2d-112.44940083756063!3d35.92459829266354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672092969156!5m2!1sru!2sru"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> alt="Седона на карте"</iframe>
     </section>
   </main>
   <footer class="footer">
@@ -121,24 +150,33 @@
     <ul class="footer__social">
       <li class="footer__item">
         <a class="footer__link" href="https://vk.com/htmlacademy">
+          <img class="footer__icon" src="images/logos/vk.svg" width="48px" height="48px"
+          alt="vkontakte.">
           <span class="visually-hidden">vkontakte.</span>
         </a>
       </li>
       <li class="footer__item">
         <a class="footer__link" href="https://t.me/htmlacademy">
+          <img class="footer__icon" src="images/logos/telegram.svg" width="48px" height="48px"
+          alt="telegram.">
           <span class="visually-hidden">telegram.</span>
         </a>
       </li>
       <li class="footer__item">
         <a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
+          <img class="footer__icon" src="images/logos/youtube.svg" width="48px" height="48px"
+          alt="youtube.">
           <span class="visually-hidden">youtube.</span>
         </a>
       </li>
     </ul>
     <div class="footer__copyright">
       <span class="footer__text">Разработано</span>
+      <img class="footer__icon" src="images/logos/htmlacademy.svg" width="27px" height="33px"
+      alt="htmlacademy.">
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </div>
 </html>
