@@ -16,13 +16,17 @@
     line-height: 26px;
     margin-top: 0;
     padding-top: 25px;
+    @media (min-width: @tablet-width) {
+      padding-top: 45px;
+    }
   }
 
   &__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    padding-bottom: 35px;
+    padding-bottom: 15px;
+    margin: 0 auto;
   }
 
   &__description-container {
@@ -51,7 +55,6 @@
   margin-left: 55px;
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 256px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -68,13 +71,15 @@
 }
 }
 
+
 .advantages__item--greyback {
   background-color: rgba(238, 238, 238, 1);
   @media (min-width: @tablet-width) {
-    width: 256px;
     height: 256px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+
     }
     @media (min-width: @desktop-width) {
       width: 400px;
@@ -84,7 +89,7 @@
 .advantages__item--blueback {
   color: #ffff;
   background-color: rgba(129, 179, 210, 1);
-  height: 440px;
+  height: 425px;
   margin-top: 45px;
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -94,17 +99,17 @@
 
 .logo {
   position: relative;
-  right: 120px;
+  right: 125px;
   top: 58px;
   @media (min-width: @tablet-width) {
   position: relative;
   left: 130px;
-  top: 20px;
+  top: 5px;
   }
   @media (min-width: @desktop-width) {
     position: relative;
-    left: 150px;
-    top: 20px;
+    left: 200px;
+    top: 10px;
   }
 
 
