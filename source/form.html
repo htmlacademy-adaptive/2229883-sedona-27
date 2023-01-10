@@ -48,7 +48,10 @@
   </header>
   <main class="main-container">
     <section class="catalog-welcome">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/catalog-welcome-tablet.svg" width="457" height="77" alt="Логотип Welcome.">
       <img class="main-logo" src="images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
+      </picture>
     </section>
     <section class="intro">
       <h1 class="intro__title">
@@ -58,27 +61,27 @@
         достопримечательностях</p>
     </section>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form__contacts-container">
-        <div class="form__visitor-container">
+      <div class="form__group--container">
+      <div class="form__group--small">
       <h3 class="form__title">
         Представьтесь: </h3>
-      <p class="form__group">Имя*:
+      <p class="form__label">Имя*:
       <label class="form__name-data">
         <input type="text" class="form__form-input" name="name" placeholder="Пётр">
       </label>
     </p>
-       <p class="form__group">Фамилия*:
+       <p class="form__label">Фамилия*:
       <label class="form__name-data">
         <input type="text" class="form__form-input" name="surname" placeholder="Пустота">
       </label>
     </p>
-      <p class="form__group">Отчество:
+      <p class="form__label">Отчество:
       <label class="form__name-data">
         <input type="text" class="form__form-input" name="lastname" placeholder="Викторович">
       </label>
       </p>
     </div>
-    <div class="form__visitor-contacts">
+    <div class="form__group--small">
       <h3 class="form__title">
         Контактная информация: </h3>
       <p class="form__label">Контактный телефон*:
@@ -92,47 +95,64 @@
       </label>
       </p>
     </div>
-    </div>
+  </div>
+    <div class="form__group">
       <h3 class="form__title">
         Ваше общее впечатление: </h3>
       <ul class="form__filter-list">
         <li class="form__filter-item">
           <label class="form__control">
             <input class="form__control-input" type="radio" name="reaction" value="positive" checked>
-            Скорее положительное
+            <span class="form__radio-fake"></span>
+            <span class="form__radio-text">Скорее положительное</span>
           </label>
         </li>
         <li class="form__filter-item">
           <label class="form__control">
             <input class="form__control-input" type="radio" name="reaction" value="negative">
-            Скорее отрицательное
+            <span class="form__radio-fake"></span>
+            <span class="form__radio-text">Скорее отрицательное</span>
           </label>
         </li>
         <li class="form__filter-item">
           <label class="form__control">
             <input class="form__control-input" type="radio" name="reaction" value="none">
-            Затрудняюсь ответить
+            <span class="form__radio-fake"></span>
+            <span class="form__radio-text">Затрудняюсь ответить</span>
           </label>
         </li>
       </ul>
       </fieldset>
+    </div>
       <fieldset class="form__checkbox">
         <h3 class="form__title">
           Посещённые достопримечательности: </h3>
+          <div class="form__group--container-checkbox">
+          <div class="form__group--small-checkbox">
         <label class="form__control-sights">
-          <div class="form__sights-container-left">
           <input class="form__control-input" type="checkbox" name="bridge" checked>
-          Мост Дьявола
-          <input class="form__control-input" type="checkbox" name="hill" checked>
-          Гора-Колокол
-        </div>
-        <div class="form__sights-container-right">
-          <input class="form__control-input" type="checkbox" name="park" checked>
-          Слайд-парк
-          <input class="form__control-input" type="checkbox" name="rocks">
-          Красные скалы
-        </div>
+          <span class="form__checkbox-fake"></span>
+          <span class="form__checkbox-text">Мост Дьявола</span>
         </label>
+        <label class="form__control-sights">
+          <input class="form__control-input" type="checkbox" name="bridge" checked>
+          <span class="form__checkbox-fake"></span>
+          <span class="form__checkbox-text">Гора-Колокол</span>
+        </label>
+          </div>
+          <div class="form__group--small-checkbox">
+        <label class="form__control-sights">
+          <input class="form__control-input" type="checkbox" name="bridge" checked>
+          <span class="form__checkbox-fake"></span>
+          <span class="form__checkbox-text">Слайд-парк</span>
+        </label>
+        <label class="form__control-sights">
+          <input class="form__control-input" type="checkbox" name="bridge">
+          <span class="form__checkbox-fake"></span>
+          <span class="form__checkbox-text">Красные скалы</span>
+        </label>
+      </div>
+    </div>
       </fieldset>
       <form class="form__text-control" action="https://echo.htmlacademy.ru/" method="get">
         <h3 class="form__title">
@@ -141,8 +161,8 @@
         <textarea class="form__text-area" placeholder="Опишите подробно все свои восторги">
           </textarea>
         <button class="button" type="submit" ;>Отправить отзыв </button>
-        <label class="form__label">:-Обязательные поля</label>
         </div>
+        <span class="form__mandatory">:-Обязательные поля</span>
       </form>
   </main>
   <footer class="footer">

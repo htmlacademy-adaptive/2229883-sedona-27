@@ -2,6 +2,10 @@
   &__container {
     background-color: #ffff;
 
+    @media (min-width: @mobile-width) {
+      width: 320px;
+    }
+
     @media (min-width: @tablet-width) {
       width: 768px;
     }
@@ -10,6 +14,7 @@
       width: 1200px;
     }
   }
+
 }
 
 
