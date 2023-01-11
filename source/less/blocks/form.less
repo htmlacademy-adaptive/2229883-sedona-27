@@ -15,28 +15,36 @@
   }
   }
 
-  &__group--container {
+  &__group-container {
     @media (min-width: @tablet-width) {
     display: flex;
     }
   }
 
-  &__group--small {
+  &__group-small {
     @media (min-width: @tablet-width) {
     width: 50%;
   }
 }
 
-  &__group--small-checkbox{
+  &__group-small-checkbox{
     @media (min-width: @tablet-width) {
       width: 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-  &__group--container-checkbox {
+  &__group-container-checkbox {
     @media (min-width: @tablet-width) {
       display: flex;
       padding-left: 50px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 0;
     }
   }
 
@@ -86,7 +94,8 @@
     }
     @media (min-width: @desktop-width) {
       justify-content: space-between;
-      padding: 0;
+      padding-right: 173px;
+
 
     }
 
@@ -172,10 +181,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16px;
+    width: 23px;
     height: 16px;
-    background-color: #000;
-    border-radius: 50%;
+    background-image: url(../images/logos/tick.svg);
     opacity: 0;
     transition: .2s;
   }
@@ -204,18 +212,43 @@
     align-items: center;
 
     @media (min-width: @tablet-width) {
-    align-items: flex-start;
+      align-items: center;
+      padding-left: 60px;
+      padding-right: 60px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-left: 150px;
-
+      padding-left: 120px;
+      padding-right: 120px;
     }
+  }
+  &__text-area {
+    @media (min-width: @desktop-width) {
+      padding-right: 200px;
+    }
+
+  }
+
+  &__feedback {
+    @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 80px;
+}
   }
 
   &__mandatory {
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 18px;
+    padding-right: 33px;
+  }
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
