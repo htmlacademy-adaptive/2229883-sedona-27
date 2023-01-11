@@ -7,14 +7,13 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    width: 500px;
-    margin-left: 124px;
+    padding: 47.5px 124px 0 124px;
+    margin: 0 auto;
   }
   @media (min-width: @desktop-width) {
-    width: 484px;
-    margin-left: 357px;
+    padding: 47.5px 357px 0 357px;
+    margin: 0 auto;
   }
-
 
   &__title {
     margin-bottom: 35px;
@@ -22,6 +21,9 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   &__description {

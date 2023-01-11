@@ -49,7 +49,11 @@
     </header>
     <main class="main-container">
       <section class="catalog-welcome">
-        <img class="main-logo" src="images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/catalog-welcome-tablet.svg" width="457" height="77"
+            alt="Логотип Welcome.">
+          <img class="main-logo" src="images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
+        </picture>
       </section>
       <section class="intro">
         <h1 class="intro__title">
@@ -62,50 +66,115 @@
         <ul class="catalog-photos__list">
           <li class="catalog-photos__item">
             <div class="catalog-photos__photos-photo">
-              <img class="catalog-photos__photo" src="images/photos/road.jpg" width="280px" height="280px"
-                alt="Фото дороги.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/photos/road-desktop.jpg 1x, images/photos/road-desktop-dppx@2x.jpg 2x" width="1200px"
+                  height="400px" alt="Фото дороги.">
+                <source media="(min-width: 768px)"
+                  srcset="images/photos/road-tablet.jpg 1x, images/photos/road-tablet-dppx@2x 2x" width="648"
+                  height="406" alt="Фото дороги.">
+                <img class="catalog-photos__photo" src="images/photos/road.jpg" width="280px" height="280px"
+                  srcset="images/photos/road-dppx@2x.jpg 2x" alt="Фото дороги.">
+              </picture>
             </div>
-            <h3 class="catalog-photos__title">Неродные просторы</h3>
-            <p class="catalog-photos__author">Автор фото: Борис</p>
-            <p class="catalog-photos__likes-amount">
-              <img class="catalog__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-              1350
-            </p>
+            <div class="catalog-photos__container">
+              <div class="catalog-photos__description-container">
+                <h3 class="catalog-photos__title">Неродные просторы</h3>
+                <p class="catalog-photos__author">Автор фото: Борис</p>
+              </div>
+              <div class="catalog-photos__like like-button">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
+                    alt="likes.">
+                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
+                </picture>
+                <span class="like-button__counter">1350</span>
+              </div>
+            </div>
           </li>
           <li class="catalog-photos__item">
             <div class="catalog-photos__photos-photo">
-              <img class="catalog-photos__photo" src="images/photos/plant.jpg" width="280px" height="280px"
-                alt="Фото растения.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/photos/plant-desktop.jpg 1x, images/photos/plant-desktop-dppx@2x.jpg 2x" width="400"
+                  height="267" alt="Фото растения.">
+                <source media="(min-width: 768px)"
+                  srcset="images/photos/plant-tablet.jpg 1x, images/photos/plant-tablet-dppx@2x.jpg 2x" width="324"
+                  height="267" alt="Фото растения.">
+                <img class="catalog-photos__photo" src="images/photos/plant.jpg" width="280px" height="280px"
+                  srcset="images/photos/plant-dppx@2x.jpg 2x" alt="Фото растения.">
+              </picture>
             </div>
-            <h3 class="catalog-photos__title">Местная растительность</h3>
-            <p class="catalog-photos__author">Автор фото: Сергей</p>
-            <p class="catalog-photos__likes-amount"><img class="catalog__icon" src="images/logos/like.svg" width="23px"
-                height="21px" alt="likes.">
-              143</p>
+            <div class="catalog-photos__container-small">
+              <div class="catalog-photos__description-container-small">
+                <h3 class="catalog-photos__title">Местная растительность</h3>
+                <p class="catalog-photos__author">Автор фото: Сергей</p>
+              </div>
+              <div class="catalog-photos__like like-button">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
+                    alt="likes.">
+                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
+                </picture>
+                <span class="like-button__counter">143</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-photos__item super-gray">
+            <div class="catalog-photos__photos-photo">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/photos/serpantine-desktop.jpg 1x, images/photos/serpantine-desktop-dppx@2x.jpg 2x"
+                  width="400" height="267" alt="Фото серпантина.">
+                <source media="(min-width: 768px)"
+                  srcset="images/photos/serpantine-tablet.jpg 1x,images/photos/serpantine-tablet-dppx@2x.jpg  2x"
+                  width="324" height="267" alt="Фото серпантина.">
+                <img class="catalog-photos__photo" src="images/photos/serpantine.jpg" width="280px" height="280px"
+                  srcset="images/photos/serpantine-dppx@2x.jpg 2x" alt="Фото серпантина.">
+              </picture>
+            </div>
+            <div class="catalog-photos__container-small">
+              <div class="catalog-photos__description-container-small">
+                <h3 class="catalog-photos__title">Дорога на север</h3>
+                <p class="catalog-photos__author">Автор фото: Петр</p>
+              </div>
+              <div class="catalog-photos__like-small like-button">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
+                    alt="likes.">
+                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
+                </picture>
+                <span class="like-button__counter">96</span>
+              </div>
+            </div>
           </li>
           <li class="catalog-photos__item">
             <div class="catalog-photos__photos-photo">
-              <img class="catalog-photos__photo" src="images/photos/serpantine.jpg" width="280px" height="280px"
-                alt="Фото серпантина.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="images/photos/bridge-desktop.jpg 1x,images/photos/bridge-desktop-dppx@2x.jpg  2x" width="400"
+                  height="267" alt="Фото моста дьявола.">
+                <source media="(min-width: 768px)"
+                  srcset="images/photos/bridge-tablet.jpg 1x,images/photos/bridge-tablet-dppx@2x.jpg  2x" width="324"
+                  height="267" alt="Фото моста дьявола.">
+                <img class="catalog-photos__photo" src="images/photos/bridge.jpg" width="280px" height="280px"
+                  srcset="images/photos/bridge-dppx@2x.jpg 2x" alt="Фото моста дьявола.">
+              </picture>
             </div>
-            <h3 class="catalog-photos__title">Дорога на север</h3>
-            <p class="catalog-photos__author">Автор фото: Петр</p>
-            <p class="catalog-photos__likes-amount">
-              <img class="catalog__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-              96
-            </p>
-          </li>
-          <li class="catalog-photos__item">
-            <div class="catalog-photos__photos-photo">
-              <img class="catalog-photos__photo" src="images/photos/bridge.jpg" width="280px" height="280px"
-                alt="Фото моста дьявола.">
+            <div class="catalog-photos__container-small">
+              <div class="catalog-photos__description-container-small">
+                <h3 class="catalog-photos__title">Мост дьявола</h3>
+                <p class="catalog-photos__author">Автор фото: Антон</p>
+              </div>
+              <div class="catalog-photos__like-small like-button">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
+                    alt="likes.">
+                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
+                </picture>
+                <span class="like-button__counter">254</span>
+              </div>
             </div>
-            <h3 class="catalog-photos__title">Мост дьявола</h3>
-            <p class="catalog-photos__author">Автор фото: Антон</p>
-            <p class="catalog-photos__likes-amount">
-              <img class="catalog__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-              254
-            </p>
           </li>
         </ul>
       </section>
@@ -113,8 +182,16 @@
         <h2 class="outro__title">Все еще сомневаетесь?</h2>
         <p class="outro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
-        <img class="outro__video" src="images/photos/video.jpg.jpg" width="280px" height="177px"
-          alt="видеопрезентация.">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="images/photos/video-desktop.jpg 1x,images/photos/video-desktop-dppx@2x.jpg  2x" width="800"
+            height="500px" alt="видеопрезентация.">
+          <source media="(min-width: 768px)"
+            srcset="images/photos/video-tablet.jpg 1x,images/photos/video-tablet-dppx@2x.jpg  2x" width="648"
+            height="500" alt="видеопрезентация.">
+          <img class="outro__video" src="images/photos/video.jpg.jpg" width="280px" height="177px"
+            srcset="images/photos/video-dppx@2x.jpg  2x" alt="видеопрезентация.">
+        </picture>
       </section>
     </main>
     <footer class="footer">
