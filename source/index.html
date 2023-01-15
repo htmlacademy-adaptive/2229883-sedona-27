@@ -12,6 +12,18 @@
 <div class="page__container">
 
   <body class="page__body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="academy">
+        <g>
+          <path d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z"/>
+        </g>
+      </symbol>
+      <symbol id="triangle-decorate">
+        <g>
+          <path fill="#fff" d="M249.6 23.7 0 0v57h600L249.6 0v23.7ZM950.4 23.7V0L600 57h599.9V0L950.4 23.7Z"/>
+        </g>
+      </symbol>
+    </svg>
     <header class="main-header">
       <div class="main-header__main-logo-container">
         <a class="main-header__main-logo">
@@ -55,6 +67,9 @@
             alt="Логотип Welcome.">
           <img class="welcome-logo" src="images/main-welcome.svg" width="282" height="214" alt="Логотип Welcome.">
         </picture>
+        <svg class="main__triangle-index">
+          <use href="#triangle-decorate"></use>
+        </svg>
       </section>
       <section class="intro">
         <h1 class="intro__title">Седона-небольшой городок в Аризоне,
@@ -73,6 +88,9 @@
             </div>
             <div class="advantages__advatage-photo">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="images/photos/index-webp-desktop.webp 1x, images/photos/index-webp-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/photos/index-webp-tablet.webp 1x, images/photos/index-webp-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/photos/index-webp.webp 1x, images/photos/index-webp@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="images/photos/index-view-desktop.jpg" width="800" height="260"
                   alt="Фото города.">
                   <source media="(min-width: 768px)" srcset="images/photos/index-view-tablet.jpg" width="512" height="260"
@@ -188,7 +206,11 @@
       </ul>
       <div class="footer__copyright">
         <span class="footer__text">Разработано</span>
-        <img class="footer__icon" src="images/logos/htmlacademy.svg" width="27px" height="33px" alt="htmlacademy.">
+        <a href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+          <svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
+            <use href="#academy"></use>
+          </svg>
+      </a>
       </div>
     </footer>
     <script src="script.js"></script>

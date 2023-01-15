@@ -66,8 +66,8 @@
     }
     @media (min-width: @desktop-width) {
       z-index: 10;
-      background: #000000;
-      opacity: 0.7;
+      background: rgba(0, 0, 0, 1);
+      opacity: 0.8;
     }
   }
 
@@ -84,8 +84,8 @@
     }
     @media (min-width: @desktop-width) {
       z-index: 10;
-      background: #000000;
-      opacity: 0.7;
+      background: rgba(0, 0, 0, 1);
+      opacity: 0.8;
     }
   }
 
@@ -173,8 +173,13 @@
   padding-top: 20px;
 
   @media (min-width: @desktop-width) {
-    color: #fff;
+    fill: rgba(255, 255, 255, 1);
   }
+}
+
+.like-button__icon:hover {
+  fill: rgba(129, 179, 210, 1);
+  cursor: pointer;
 }
 
 .super-gray {

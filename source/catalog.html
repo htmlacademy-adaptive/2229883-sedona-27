@@ -10,8 +10,23 @@
   <script src="less.min.js" type="text/javascript"></script>
 </head>
 <div class="page__container">
-
   <body class="page__body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="like">
+        <g>
+        <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/>
+      </g>
+      <symbol id="academy">
+        <g>
+          <path d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z"/>
+        </g>
+      <symbol id="triangle-decorate">
+        <g>
+          <path fill="#fff" d="M249.6 23.7 0 0v57h600L249.6 0v23.7ZM950.4 23.7V0L600 57h599.9V0L950.4 23.7Z"/>
+        </g>
+      </symbol>
+      </symbol>
+    </svg>
     <header class="main-header">
       <a class="main-header__main-logo" href="http://localhost:3000/index.html">
         <div class="main-header__main-logo-container">
@@ -54,6 +69,9 @@
             alt="Логотип Welcome.">
           <img class="main-logo" src="images/catalog-welcome.svg" width="229px" height="39px" alt="Надпись Sedona.">
         </picture>
+        <svg class="main__triangle">
+          <use href="#triangle-decorate"></use>
+        </svg>
       </section>
       <section class="intro">
         <h1 class="intro__title">
@@ -83,11 +101,9 @@
                 <p class="catalog-photos__author">Автор фото: Борис</p>
               </div>
               <div class="catalog-photos__like like-button">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
-                    alt="likes.">
-                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-                </picture>
+                <svg class="like-button__icon" width="23px" height="21px" alt="likes.">
+                  <use href="#like"></use>
+                </svg>
                 <span class="like-button__counter">1350</span>
               </div>
             </div>
@@ -111,11 +127,9 @@
                 <p class="catalog-photos__author">Автор фото: Сергей</p>
               </div>
               <div class="catalog-photos__like like-button">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
-                    alt="likes.">
-                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-                </picture>
+                <svg class="like-button__icon" width="23px" height="21px" alt="likes.">
+                  <use href="#like"></use>
+                </svg>
                 <span class="like-button__counter">143</span>
               </div>
             </div>
@@ -139,11 +153,9 @@
                 <p class="catalog-photos__author">Автор фото: Петр</p>
               </div>
               <div class="catalog-photos__like-small like-button">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
-                    alt="likes.">
-                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-                </picture>
+                <svg class="like-button__icon" width="23px" height="21px" alt="likes.">
+                  <use href="#like"></use>
+                </svg>
                 <span class="like-button__counter">96</span>
               </div>
             </div>
@@ -167,11 +179,9 @@
                 <p class="catalog-photos__author">Автор фото: Антон</p>
               </div>
               <div class="catalog-photos__like-small like-button">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="images/logos/like-desktop.svg" width="23px" height="21px"
-                    alt="likes.">
-                  <img class="like-button__icon" src="images/logos/like.svg" width="23px" height="21px" alt="likes.">
-                </picture>
+                <svg class="like-button__icon" width="23px" height="21px" alt="likes.">
+                  <use href="#like"></use>
+                </svg>
                 <span class="like-button__counter">254</span>
               </div>
             </div>
@@ -220,7 +230,11 @@
       </ul>
       <div class="footer__copyright">
         <span class="footer__text">Разработано</span>
-        <img class="footer__icon" src="images/logos/htmlacademy.svg" width="27px" height="33px" alt="htmlacademy.">
+        <a href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+          <svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
+            <use href="#academy"></use>
+          </svg>
+      </a>
       </div>
     </footer>
     </main>

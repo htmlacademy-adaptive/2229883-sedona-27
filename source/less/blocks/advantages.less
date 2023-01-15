@@ -2,6 +2,13 @@
   text-align: center;
   overflow: hidden;
 
+  &__photo {
+    height: 100%;
+    @media (min-width: @desktop-width) {
+    width: 100%;
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
