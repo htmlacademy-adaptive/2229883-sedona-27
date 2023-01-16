@@ -24,12 +24,15 @@
   &__group-small {
     @media (min-width: @tablet-width) {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
   &__group-small-checkbox{
     @media (min-width: @tablet-width) {
-      width: 50%;
+      width: 45%;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,10 +44,10 @@
   &__group-container-checkbox {
     @media (min-width: @tablet-width) {
       display: flex;
-      padding-left: 50px;
+      padding-left: 110px;
     }
     @media (min-width: @desktop-width) {
-      padding: 0;
+      padding-left: 80px;
     }
   }
 
@@ -55,7 +58,7 @@
 
   &__label {
     text-align: start;
-    margin-left: 20px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -83,14 +86,14 @@
     flex-direction: column;
     align-items: flex-start;
     list-style-type: none;
-    padding-left: 15px;
+    padding-left: 30px;
 
     @media (min-width: @tablet-width) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       align-content: stretch;
-      padding-left: 30px;
+      padding-left: 96px;
     }
     @media (min-width: @desktop-width) {
       justify-content: space-between;
@@ -133,6 +136,7 @@
   }
 
   &__radio-fake {
+    cursor: pointer;
     height: 46px;
     width: 46px;
     margin-right: 16px;
@@ -166,6 +170,7 @@
   }
 
   &__checkbox-fake {
+    cursor: pointer;
     height: 46px;
     width: 46px;
     display: inline-block;
@@ -250,5 +255,10 @@
   }
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+  &__button {
+    @media (min-width: @desktop-width) {
+      width: 458px;
+  }
   }
 }
