@@ -1,0 +1,26 @@
+.like-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__counter {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    @media (min-width: @desktop-width) {
+      color: #fff;
+    }
+
+  }
+
+  &__icon {
+    @media (min-width: @desktop-width) {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__icon:hover {
+    fill: rgba(129, 179, 210, 1);
+    cursor: pointer;
+  }
+}

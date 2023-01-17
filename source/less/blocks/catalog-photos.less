@@ -64,10 +64,11 @@
       display: flex;
       flex-direction: row;
     }
+
     @media (min-width: @desktop-width) {
       z-index: 10;
-      background: #000000;
-      opacity: 0.7;
+      background: rgba(0, 0, 0, 1);
+      opacity: 0.8;
     }
   }
 
@@ -82,10 +83,11 @@
       display: flex;
       flex-direction: row;
     }
+
     @media (min-width: @desktop-width) {
       z-index: 10;
-      background: #000000;
-      opacity: 0.7;
+      background: rgba(0, 0, 0, 1);
+      opacity: 0.8;
     }
   }
 
@@ -115,6 +117,7 @@
       padding-left: 20px;
       padding-right: 50px;
     }
+
     @media (min-width: @desktop-width) {
       padding-right: 120px;
     }
@@ -133,6 +136,7 @@
       font-size: 14px;
       line-height: 26px;
     }
+
     @media (min-width: @desktop-width) {
       color: #fff;
     }
@@ -158,34 +162,12 @@
   }
 }
 
-.like-button__counter {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-
-  @media (min-width: @desktop-width) {
-    color: #fff;
-  }
-
-}
-
-.like-button__icon {
-  padding-top: 20px;
-
-  @media (min-width: @desktop-width) {
-    color: #fff;
-  }
-}
-
-.super-gray {
+.catalog-photos__item--super-gray {
   @media (min-width: @tablet-width) {
     background-color: rgba(234, 234, 234, 1);
   }
+
   @media (min-width: @desktop-width) {
     background-color: #fff;
   }
-}
-
-.like-button {
-  padding-bottom: 20px;
 }
