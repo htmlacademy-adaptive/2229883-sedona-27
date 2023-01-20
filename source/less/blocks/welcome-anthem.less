@@ -8,6 +8,7 @@
   text-align: center;
   padding-top: 90px;
   padding-bottom: 70px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-top: 50px;
@@ -22,3 +23,18 @@
   }
 }
 
+.welcome-anthem:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/triangle-decorate.svg");
+  width: 100%;
+  height: 56px;
+  top: 404px;
+
+  @media (min-width: @tablet-width) {
+    top: 424px;
+  }
+}

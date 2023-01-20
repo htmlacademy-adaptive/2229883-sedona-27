@@ -9,9 +9,21 @@
     text-align: center;
     padding-top: 108px;
     padding-bottom: 118px;
+    position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/index-background-2dppx.jpg");
       background-size: 1338px auto;
       }
+    }
+    .catalog-welcome:after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/triangle-decorate.svg");
+      width: 100%;
+      height: 56px;
+      top: 277px;
     }
