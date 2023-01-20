@@ -13,7 +13,6 @@ import del from 'del';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 
-
 // Styles
 
 export const styles = () => {
@@ -113,7 +112,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/script.js', gulp.series(script));
 }
 
 export const build = gulp.series (
@@ -123,7 +122,7 @@ export const build = gulp.series (
   gulp.parallel (
   styles,
   html,
-  scripts,
+  script,
   svg,
   sprite,
   createWebp
@@ -138,7 +137,7 @@ export default gulp.series(
   gulp.parallel (
     styles,
     html,
-    scripts,
+    script,
     svg,
     sprite,
     createWebp
