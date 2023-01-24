@@ -43,8 +43,27 @@
     line-height: 26px;
     padding: 20px 220px 20px 220px;
     }
+
+    &__play {
+      fill: #fff;
+      opacity: 0.7;
+      position: absolute;
+      top: 2540px;
+      width: 48px;
+      height: 54px;
+      cursor: pointer;
+      @media (min-width: @tablet-width) {
+        top: 2220px;
+        }
+        @media (min-width: @desktop-width) {
+          top: 1750px;
+    }
 }
 
+&__play:active {
+  opacity: 0.9;
+}
+}
 
 .button--outro {
   @media (min-width: @desktop-width) {

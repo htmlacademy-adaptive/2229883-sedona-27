@@ -2,50 +2,82 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
   }
 
+  &__mail-logo {
+    width: 58px;
+    height: 58px;
+    fill: rgba(0, 0, 0, 1);
+    background-color: rgba(230, 230, 230, 1);
+    position: absolute;
+    top: 25px;
+    left: 235px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 170px;
+    }
+  }
+
+  &__phone-logo {
+    width: 58px;
+    height: 58px;
+    fill: rgba(1, 1, 1, 1);
+    background-color: rgba(230, 230, 230, 1);
+    position: absolute;
+    top: 25px;
+    left: 235px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 170px;
+    }
+
+  }
+
   &__group {
     margin: 0;
+
     @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__group-container {
     @media (min-width: @tablet-width) {
-    display: flex;
+      display: flex;
     }
   }
 
   &__group-small {
     @media (min-width: @tablet-width) {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
-}
 
-  &__group-small-checkbox{
+  &__group-small-checkbox {
     @media (min-width: @tablet-width) {
       width: 45%;
-  }
+    }
 
-  @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-around;
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-around;
+    }
   }
-}
 
   &__group-container-checkbox {
     @media (min-width: @tablet-width) {
       display: flex;
       padding-left: 110px;
     }
+
     @media (min-width: @desktop-width) {
       padding-left: 80px;
     }
@@ -61,6 +93,7 @@
     padding-left: 30px;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__form-input {
@@ -68,6 +101,7 @@
     height: 58px;
     background-color: rgba(242, 242, 242, 1);
     border: none;
+
     @media (min-width: @desktop-width) {
       width: 430px;
 
@@ -95,6 +129,7 @@
       align-content: stretch;
       padding-left: 96px;
     }
+
     @media (min-width: @desktop-width) {
       justify-content: space-between;
       padding-right: 173px;
@@ -107,7 +142,7 @@
   &__filter-item {
     @media (min-width: @tablet-width) {
       padding-left: 40px;
-  }
+    }
   }
 
   &__control {
@@ -161,7 +196,7 @@
     transition: .2s;
   }
 
-  .form__control-input:checked +.form__radio-fake::before {
+  .form__control-input:checked+.form__radio-fake::before {
     opacity: 1;
   }
 
@@ -193,7 +228,7 @@
     transition: .2s;
   }
 
-  .form__control-input:checked +.form__checkbox-fake::before {
+  .form__control-input:checked+.form__checkbox-fake::before {
     opacity: 1;
   }
 
@@ -211,6 +246,7 @@
       width: 80%;
     }
   }
+
   &__text-area-container {
     display: flex;
     flex-direction: column;
@@ -227,6 +263,7 @@
       padding-right: 120px;
     }
   }
+
   &__text-area {
     @media (min-width: @desktop-width) {
       padding-right: 200px;
@@ -236,16 +273,17 @@
 
   &__feedback {
     @media (min-width: @tablet-width) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 30px;
-  }
-  @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 80px;
-}
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-left: 60px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 110px;
+      padding-right: 80px;
+    }
   }
 
   &__mandatory {
@@ -253,12 +291,29 @@
     flex-direction: row-reverse;
     padding-right: 33px;
   }
+
   @media (min-width: @tablet-width) {
     padding: 0;
   }
+
   &__button {
     @media (min-width: @desktop-width) {
       width: 458px;
+    }
   }
+}
+
+.form__group-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  top: 1193px;
+  background: #E5E5E5;
+  mix-blend-mode: normal;
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
