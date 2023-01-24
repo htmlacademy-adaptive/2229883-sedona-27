@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
+  <link rel="preload" href="css/css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
@@ -104,7 +108,7 @@
             class="main-logo" src="images/catalog-welcome.png" width="229px" height="39px" alt="Надпись Sedona.">
         </picture>
       </section>
-      <section class="intro">
+      <section class="intro catalog-intro">
         <h1 class="intro__title">Фото и видео</h1>
         <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
@@ -142,7 +146,7 @@
                   height="267" alt="Фото растения.">
                 <source media="(min-width: 768px)"
                   srcset="images/photos/plant-tablet.jpg, images/photos/plant-tablet-dppx@2x.jpg 2x" width="324"
-                  height="267" alt="Фото растения."><img class="catalog-photos__photo" src="images/photos/plant.jpg"
+                  height="267" alt="Фото растения."><img class="catalog-photos__photo" src="images/photos/plant.jpg" loading="lazy"
                   width="280px" height="280px" srcset="images/photos/plant-dppx@2x.jpg 2x" alt="Фото растения.">
               </picture>
             </div>
@@ -166,7 +170,7 @@
                 <source media="(min-width: 768px)"
                   srcset="images/photos/serpantine-tablet.jpg 1x,images/photos/serpantine-tablet-dppx@2x.jpg 2x"
                   width="324" height="267" alt="Фото серпантина."><img class="catalog-photos__photo"
-                  src="images/photos/serpantine.jpg" width="280px" height="280px"
+                  src="images/photos/serpantine.jpg" loading="lazy" width="280px" height="280px"
                   srcset="images/photos/serpantine-dppx@2x.jpg 2x" alt="Фото серпантина.">
               </picture>
             </div>
@@ -190,7 +194,7 @@
                 <source media="(min-width: 768px)"
                   srcset="images/photos/bridge-tablet.jpg 1x,images/photos/bridge-tablet-dppx@2x.jpg 2x" width="324"
                   height="267" alt="Фото моста дьявола."><img class="catalog-photos__photo"
-                  src="images/photos/bridge.jpg" width="280px" height="280px"
+                  src="images/photos/bridge.jpg" loading="lazy" width="280px" height="280px"
                   srcset="images/photos/bridge-dppx@2x.jpg 2x" alt="Фото моста дьявола.">
               </picture>
             </div>

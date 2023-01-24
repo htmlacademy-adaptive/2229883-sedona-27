@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
+  <link rel="preload" href="css/css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="../images/index-background.jpg" as="image">
+  <link rel="preload" href="../images/index-background-2dppx.jpg" as="image">
+  <link rel="preload" href="images/photos/index-view-1.jpg" as="image">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
@@ -134,14 +141,14 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="images/photos/index-view-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="images/photos/index-view-tablet.jpg">
-                <img
-                  class="advantages__photo" src="images/photos/index-view-1.jpg" width="520" height="260"
+                <img class="advantages__photo" src="images/photos/index-view-1.jpg" width="520" height="260"
                   alt="Фото города.">
               </picture>
             </div>
           </li>
           <div class="advantages__greyback-container">
-            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px" alt="Логтип дома.">
+            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px"
+                alt="Логтип дома.">
                 <use href="#house"></use>
               </svg>
               <div class="advantages__item-container">
@@ -151,7 +158,8 @@
                 </div>
               </div>
             </li>
-            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px" alt="Логтип дома.">
+            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px"
+                alt="Логтип дома.">
                 <use href="#burger"></use>
               </svg>
               <div class="advantages__item-container">
@@ -161,7 +169,8 @@
                 </div>
               </div>
             </li>
-            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px" alt="Логтип дома.">
+            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px"
+                alt="Логтип дома.">
                 <use href="#souvenier"></use>
               </svg>
               <div class="advantages__item-container">
@@ -182,7 +191,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="images/photos/index-view-desktop-2.jpg">
                 <source media="(min-width: 768px)" srcset="images/photos/index-view-tablet-2.jpg"><img
-                  class="advantages__photo" src="images/photos/index-view-2.jpg" width="520" height="260"
+                  class="advantages__photo" src="images/photos/index-view-2.jpg" loading="lazy" width="520" height="260"
                   alt="Фото моста.">
               </picture>
             </div>
@@ -233,9 +242,9 @@
             </svg> <span class="visually-hidden">youtube.</span></a></li>
       </ul>
       <div class="footer__copyright"><span class="footer__text">Разработано</span> <a href="https://htmlacademy.ru/"
-        aria-label="Сайт HTML Academy"><svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
-          <use href="#academy"></use>
-        </svg></a></div>
+          aria-label="Сайт HTML Academy"><svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
+            <use href="#academy"></use>
+          </svg></a></div>
     </footer>
     <script src="js/script.js"></script>
   </body>
