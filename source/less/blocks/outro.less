@@ -10,40 +10,37 @@
   }
 
   &__title {
-    margin-top: 28px;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
+
     @media (min-width: @tablet-width) {
-      margin-top: 48px;
+      margin-top: 25px;
+      margin-bottom: 0;
       font-size: 30px;
       line-height: 26px;
       }
 
       @media (min-width: @desktop-width) {
-        padding: 20px 0 0 0;
+        padding: 45px 0 0 0;
         margin: 0;
       }
   }
 
   &__description {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-    margin-bottom: 32px;
     padding: 0px 20px 0px 20px;
     @media (min-width: @tablet-width) {
-      font-size: 18px;
       line-height: 26px;
-      padding: 20px 90px 20px 90px;
+      padding: 15px 90px 20px 90px;
+      }
+      @media (min-width: @desktop-width) {
+        padding: 15px 350px 25px 350px;
+
       }
   }
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 26px;
-    padding: 20px 220px 20px 220px;
-    }
-
     &__video {
       margin-top: 20px;
     }
@@ -52,12 +49,12 @@
       fill: #fff;
       opacity: 0.7;
       position: absolute;
-      top: 2440px;
+      top: 2370px;
       width: 48px;
       height: 54px;
       cursor: pointer;
       @media (min-width: @tablet-width) {
-        top: 2220px;
+        top: 2150px;
         }
         @media (min-width: @desktop-width) {
           top: 1750px;
@@ -70,8 +67,7 @@
 }
 
 .button--outro {
-  @media (min-width: @desktop-width) {
-    width: 458px;
-
-}
+  @media (min-width: @tablet-width) {
+    width: 360px;
+    }
 }

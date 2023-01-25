@@ -6,14 +6,16 @@
   background-position: 50%;
   background-size: auto;
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 70px;
-  padding-left: 15px;
   position: relative;
 
+  @media (min-width: @mobile-width) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
   @media (min-width: @tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 130px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 
   }
 
@@ -33,10 +35,10 @@
   background-image: url("../images/triangle-decorate.svg");
   width: 100%;
   height: 56px;
-  top: 404px;
+  top: 333.5px;
   left: 0;
 
   @media (min-width: @tablet-width) {
-    top: 424px;
+    top: 425px;
   }
 }
