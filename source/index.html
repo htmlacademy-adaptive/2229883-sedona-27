@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
+  <link rel="preload" href="css/css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="../images/index-background.jpg" as="image">
+  <link rel="preload" href="../images/index-background-2dppx.jpg" as="image">
+  <link rel="preload" href="images/photos/index-view-1.jpg" as="image">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
@@ -134,14 +141,14 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="images/photos/index-view-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="images/photos/index-view-tablet.jpg">
-                <img
-                  class="advantages__photo" src="images/photos/index-view-1.jpg" width="520" height="260"
+                <img class="advantages__photo" src="images/photos/index-view-1.jpg" width="520" height="260"
                   alt="Фото города.">
               </picture>
             </div>
           </li>
           <div class="advantages__greyback-container">
-            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px" alt="Логтип дома.">
+            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px"
+                alt="Логтип дома.">
                 <use href="#house"></use>
               </svg>
               <div class="advantages__item-container">
@@ -151,7 +158,8 @@
                 </div>
               </div>
             </li>
-            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px" alt="Логтип дома.">
+            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px"
+                alt="Логтип дома.">
                 <use href="#burger"></use>
               </svg>
               <div class="advantages__item-container">
@@ -161,7 +169,8 @@
                 </div>
               </div>
             </li>
-            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px" alt="Логтип дома.">
+            <li class="advantages__item advantages__item-shop"><svg class="advantages__logo" width="39px" height="37px"
+                alt="Логтип дома.">
                 <use href="#souvenier"></use>
               </svg>
               <div class="advantages__item-container">
@@ -182,7 +191,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="images/photos/index-view-desktop-2.jpg">
                 <source media="(min-width: 768px)" srcset="images/photos/index-view-tablet-2.jpg"><img
-                  class="advantages__photo" src="images/photos/index-view-2.jpg" width="520" height="260"
+                  class="advantages__photo" src="images/photos/index-view-2.jpg" loading="lazy" width="520" height="260"
                   alt="Фото моста.">
               </picture>
             </div>
@@ -213,7 +222,7 @@
       </section>
       <section class="map"><iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967219.8363975238!2d-112.44940083756063!3d35.92459829266354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672092969156!5m2!1sru!2sru"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">alt="Седона на карте"</iframe></section>
     </main>
     <footer class="footer">
@@ -232,10 +241,12 @@
               <use href="#youtube"></use>
             </svg> <span class="visually-hidden">youtube.</span></a></li>
       </ul>
-      <div class="footer__copyright"><span class="footer__text">Разработано</span> <a href="https://htmlacademy.ru/"
-        aria-label="Сайт HTML Academy"><svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
-          <use href="#academy"></use>
-        </svg></a></div>
+      <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+      <span class="footer__text">Разработано</span>
+      <svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
+            <use href="#academy"></use>
+          </svg>
+        </a>
     </footer>
     <script src="js/script.js"></script>
   </body>

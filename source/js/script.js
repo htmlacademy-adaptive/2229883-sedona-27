@@ -12,3 +12,17 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+let like = document.querySelector('.like-button');
+let likesNumber = document.querySelector('.like-button__counter');
+
+
+like.onclick = function () {
+  if (like.classList.contains('added')) {
+    likesNumber.textContent--;
+  } else {
+    likesNumber.textContent++;
+  }
+  likesNumber.textContent = counter;
+  like.classList.toggle('added');
+};

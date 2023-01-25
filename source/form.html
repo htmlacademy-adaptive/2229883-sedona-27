@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
+  <link rel="preload" href="css/css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
@@ -191,10 +195,12 @@
               <use href="#youtube"></use>
             </svg> <span class="visually-hidden">youtube.</span></a></li>
       </ul>
-      <div class="footer__copyright"><span class="footer__text">Разработано</span> <a href="https://htmlacademy.ru/"
-          aria-label="Сайт HTML Academy"><svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
-            <use href="#academy"></use>
-          </svg></a></div>
+      <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+        <span class="footer__text">Разработано</span>
+        <svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
+              <use href="#academy"></use>
+            </svg>
+          </a>
     </footer>
     <div class="modal modal--closed">
       <div class="modal__container">
