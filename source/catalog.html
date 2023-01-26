@@ -13,15 +13,16 @@
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
 </head>
-<div class="page__container">
-
-  <body class="page__body"><svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+<body class="body">
+  <div class="body__container">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol id="like">
         <g>
           <path
             d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
             opacity=".3" />
         </g>
+      </symbol>
         <symbol id="academy">
           <g>
             <path
@@ -83,7 +84,7 @@
         </symbol>
     </svg>
     <header class="main-header"><a class="main-header__main-logo" href="index.html">
-        <div class="main-header__main-logo-container"><svg width="200" height="96" alt="Логотип Sedona.">
+        <div class="main-header__main-logo-container"><svg width="200" height="96">
             <use href="#sedona"></use>
           </svg></div>
       </a>
@@ -91,11 +92,11 @@
             class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="index.html" ;>Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
             <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html" ;>Форма
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Форма
                 отзыва</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/study" ;>Html
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/study">Html
                 academy</a></li>
           </ul>
         </div>
@@ -104,8 +105,8 @@
     <main class="main-container">
       <section class="catalog-welcome">
         <picture>
-          <source media="(min-width: 768px)" srcset="images/catalog-welcome-tablet.png" width="457" height="77"><img
-            class="main-logo" src="images/catalog-welcome.png" width="229px" height="39px" alt="Надпись Sedona.">
+          <source media="(min-width: 768px)" srcset="images/catalog-welcome-tablet.png" width="457" height="77">
+          <img class="main-logo" src="images/catalog-welcome.png" alt="Надпись Sedona.">
         </picture>
       </section>
       <section class="intro catalog-intro">
@@ -119,12 +120,10 @@
             <div class="catalog-photos__photos-photo">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="images/photos/road-desktop.jpg, images/photos/road-desktop-dppx@2x.jpg 2x" width="1200px"
-                  height="400px" alt="Фото дороги.">
+                  srcset="images/photos/road-desktop.jpg, images/photos/road-desktop-dppx@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="images/photos/road-tablet.jpg, images/photos/road-tablet-dppx@2x 2x" width="648" height="406"
-                  alt="Фото дороги."><img class="catalog-photos__photo" src="images/photos/road.jpg" width="280px"
-                  height="280px" srcset="images/photos/road-dppx@2x.jpg 2x" alt="Фото дороги.">
+                srcset="images/photos/road-tablet.jpg, images/photos/road-tablet-dppx@2x.jpg 2x">
+                  <img class="catalog-photos__photo" src="images/photos/road.jpg" srcset="images/photos/road-dppx@2x.jpg 2x" alt="Фото дороги.">
               </picture>
             </div>
             <div class="catalog-photos__container">
@@ -132,8 +131,7 @@
                 <h3 class="catalog-photos__title">Неродные просторы</h3>
                 <p class="catalog-photos__author">Автор фото: Борис</p>
               </div>
-              <div class="catalog-photos__like like-button"><svg class="like-button__icon" width="23px" height="21px"
-                  alt="likes.">
+              <div class="catalog-photos__like like-button"><svg class="like-button__icon" width="23px" height="21px">
                   <use href="#like"></use>
                 </svg> <span class="like-button__counter">1350</span></div>
               </div>
@@ -142,12 +140,10 @@
             <div class="catalog-photos__photos-photo">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="images/photos/plant-desktop.jpg, images/photos/plant-desktop-dppx@2x.jpg 2x" width="400"
-                  height="267" alt="Фото растения.">
+                  srcset="images/photos/plant-desktop.jpg, images/photos/plant-desktop-dppx@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="images/photos/plant-tablet.jpg, images/photos/plant-tablet-dppx@2x.jpg 2x" width="324"
-                  height="267" alt="Фото растения."><img class="catalog-photos__photo" src="images/photos/plant.jpg" loading="lazy"
-                  width="280px" height="280px" srcset="images/photos/plant-dppx@2x.jpg 2x" alt="Фото растения.">
+                  srcset="images/photos/plant-tablet.jpg, images/photos/plant-tablet-dppx@2x.jpg 2x">
+                  <img class="catalog-photos__photo" src="images/photos/plant.jpg" loading="lazy" srcset="images/photos/plant-dppx@2x.jpg 2x" alt="Фото растения.">
               </picture>
             </div>
             <div class="catalog-photos__container-small">
@@ -155,8 +151,7 @@
                 <h3 class="catalog-photos__title">Местная растительность</h3>
                 <p class="catalog-photos__author">Автор фото: Сергей</p>
               </div>
-              <div class="catalog-photos__like like-button"><svg class="like-button__icon" width="23px" height="21px"
-                  alt="likes.">
+              <div class="catalog-photos__like like-button"><svg class="like-button__icon" width="23px" height="21px">
                   <use href="#like"></use>
                 </svg> <span class="like-button__counter">143</span></div>
             </div>
@@ -165,13 +160,11 @@
             <div class="catalog-photos__photos-photo">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="images/photos/serpantine-desktop.jpg, images/photos/serpantine-desktop-dppx@2x.jpg 2x"
-                  width="400" height="267" alt="Фото серпантина.">
+                  srcset="images/photos/serpantine-desktop.jpg, images/photos/serpantine-desktop-dppx@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="images/photos/serpantine-tablet.jpg 1x,images/photos/serpantine-tablet-dppx@2x.jpg 2x"
-                  width="324" height="267" alt="Фото серпантина."><img class="catalog-photos__photo"
-                  src="images/photos/serpantine.jpg" loading="lazy" width="280px" height="280px"
-                  srcset="images/photos/serpantine-dppx@2x.jpg 2x" alt="Фото серпантина.">
+                  srcset="images/photos/serpantine-tablet.jpg 1x,images/photos/serpantine-tablet-dppx@2x.jpg 2x">
+                  <img class="catalog-photos__photo"
+                  src="images/photos/serpantine.jpg" loading="lazy" srcset="images/photos/serpantine-dppx@2x.jpg 2x" alt="Фото серпантина.">
               </picture>
             </div>
             <div class="catalog-photos__container-small">
@@ -180,7 +173,7 @@
                 <p class="catalog-photos__author">Автор фото: Петр</p>
               </div>
               <div class="catalog-photos__like-small like-button"><svg class="like-button__icon" width="23px"
-                  height="21px" alt="likes.">
+                  height="21px">
                   <use href="#like"></use>
                 </svg> <span class="like-button__counter">96</span></div>
             </div>
@@ -189,13 +182,11 @@
             <div class="catalog-photos__photos-photo">
               <picture>
                 <source media="(min-width: 1200px)"
-                  srcset="images/photos/bridge-desktop.jpg 1x,images/photos/bridge-desktop-dppx@2x.jpg 2x" width="400"
-                  height="267" alt="Фото моста дьявола.">
+                  srcset="images/photos/bridge-desktop.jpg 1x,images/photos/bridge-desktop-dppx@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="images/photos/bridge-tablet.jpg 1x,images/photos/bridge-tablet-dppx@2x.jpg 2x" width="324"
-                  height="267" alt="Фото моста дьявола."><img class="catalog-photos__photo"
-                  src="images/photos/bridge.jpg" loading="lazy" width="280px" height="280px"
-                  srcset="images/photos/bridge-dppx@2x.jpg 2x" alt="Фото моста дьявола.">
+                  srcset="images/photos/bridge-tablet.jpg 1x, images/photos/bridge-tablet-2dppx@2x.jpg 2x">
+                  <img class="catalog-photos__photo"
+                  src="images/photos/bridge.jpg" loading="lazy" srcset="images/photos/bridge-dppx@2x.jpg 2x" alt="Фото моста дьявола.">
               </picture>
             </div>
             <div class="catalog-photos__container-small">
@@ -204,7 +195,7 @@
                 <p class="catalog-photos__author">Автор фото: Антон</p>
               </div>
               <div class="catalog-photos__like-small like-button"><svg class="like-button__icon" width="23px"
-                  height="21px" alt="likes.">
+                  height="21px">
                   <use href="#like"></use>
                 </svg> <span class="like-button__counter">254</span></div>
             </div>
@@ -217,14 +208,12 @@
           раз!</p>
         <picture>
           <source media="(min-width: 1200px)"
-            srcset="images/photos/video-desktop.jpg 1x,images/photos/video-desktop-dppx@2x.jpg 2x" width="800"
-            height="500px" alt="видеопрезентация.">
+            srcset="images/photos/video-desktop.jpg 1x,images/photos/video-desktop-dppx@2x.jpg 2x">
           <source media="(min-width: 768px)"
-            srcset="images/photos/video-tablet.jpg 1x,images/photos/video-tablet-dppx@2x.jpg 2x" width="648"
-            height="500" alt="видеопрезентация."><img class="outro__video" src="images/photos/video.jpg.jpg"
-            width="280px" height="177px" srcset="images/photos/video-dppx@2x.jpg 2x" alt="видеопрезентация.">
+            srcset="images/photos/video-tablet.jpg 1x,images/photos/video-tablet-dppx@2x.jpg 2x">
+            <img class="outro__video" src="images/photos/video.jpg.jpg" srcset="images/photos/video-dppx@2x.jpg 2x" alt="видеопрезентация.">
         </picture>
-        <svg class="outro__play" alt="playvideo.">
+        <svg class="outro__play">
           <use href="#play"></use>
         </svg>
       </section>
@@ -233,27 +222,26 @@
       <div class="footer__hashtag"><span>#visitsedona</span></div>
       <ul class="footer__social">
         <li class="footer__item"><a class="footer__link" href="https://vk.com/htmlacademy"><svg class="footer__icon"
-              width="48px" height="48px" alt="vkontakte.">
+              width="48px" height="48px">
               <use href="#vkontakte"></use>
             </svg> <span class="visually-hidden">vkontakte.</span></a></li>
         <li class="footer__item"><a class="footer__link" href="https://t.me/htmlacademy"><svg class="footer__icon"
-              width="48px" height="48px" alt="telegram.">
+              width="48px" height="48px">
               <use href="#telegram"></use>
             </svg> <span class="visually-hidden">telegram.</span></a></li>
         <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/user/htmlacademyru"><svg
-              class="footer__icon" width="48px" height="48px" alt="youtube.">
+              class="footer__icon" width="48px" height="48px">
               <use href="#youtube"></use>
             </svg> <span class="visually-hidden">youtube.</span></a></li>
       </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
         <span class="footer__text">Разработано</span>
-        <svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
+        <svg class="footer__icon" width="27px" height="33px">
               <use href="#academy"></use>
             </svg>
           </a>
     </footer>
     <script src="js/script.js"></script>
+  </div>
   </body>
-</div>
-
 </html>

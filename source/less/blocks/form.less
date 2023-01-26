@@ -14,11 +14,17 @@
     fill: rgba(0, 0, 0, 1);
     background-color: rgba(230, 230, 230, 1);
     position: absolute;
-    top: 25px;
+    top: 577px;
     left: 235px;
+
+    @media (min-width: @tablet-width) {
+      top: 203px;
+      left: 665px;
+    }
 
     @media (min-width: @desktop-width) {
       margin-left: 170px;
+      left: 903px;
     }
   }
 
@@ -28,11 +34,17 @@
     fill: rgba(1, 1, 1, 1);
     background-color: rgba(230, 230, 230, 1);
     position: absolute;
-    top: 25px;
+    top: 477px;
     left: 235px;
+
+    @media (min-width: @tablet-width) {
+      top: 104px;
+      left: 665px;
+    }
 
     @media (min-width: @desktop-width) {
       margin-left: 170px;
+      left: 903px;
     }
 
   }
@@ -166,6 +178,7 @@
   &__label {
     text-align: start;
     padding-left: 30px;
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
     position: relative;
