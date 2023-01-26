@@ -1,0 +1,50 @@
+.catalog-welcome {
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: url("../images/index-background.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 118px;
+    position: relative;
+
+    @media (min-width: @mobile-width) {
+      height: 1px;
+    }
+    @media (min-width: @tablet-width) {
+      height: 100px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/index-background-2dppx.jpg");
+      background-size: 1338px auto;
+      }
+    }
+    .catalog-welcome:after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/triangle-decorate.svg");
+      width: 100%;
+      height: 56px;
+      top: 121px;
+      @media (min-width: @tablet-width) {
+        top: 220px;
+      }
+    }
+
+    .main-logo {
+      @media (min-width: @mobile-width) {
+        width: 229px;
+        height: 39px;
+      }
+      @media (min-width: @tablet-width) {
+      width: 459.5px;
+      height: 79.8px;
+    }
+
+  }

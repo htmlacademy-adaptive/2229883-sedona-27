@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #E7E5E5;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  padding: 15px 49px 15px 49px ;
+  border: none;
+}
+
+.button:hover {
+cursor: pointer;
+}
+
+.button:active {
+    background-color: #5496BD;
+    opacity: 0.5;
+}
+
+.visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+      display: none;
+    }

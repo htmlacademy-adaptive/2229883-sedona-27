@@ -1,0 +1,488 @@
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  &__mail-logo {
+    width: 58px;
+    height: 58px;
+    fill: rgba(0, 0, 0, 1);
+    background-color: rgba(230, 230, 230, 1);
+    position: absolute;
+    top: 577px;
+    left: 235px;
+
+    @media (min-width: @tablet-width) {
+      top: 203px;
+      left: 665px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 170px;
+      left: 903px;
+    }
+  }
+
+  &__phone-logo {
+    width: 58px;
+    height: 58px;
+    fill: rgba(1, 1, 1, 1);
+    background-color: rgba(230, 230, 230, 1);
+    position: absolute;
+    top: 477px;
+    left: 235px;
+
+    @media (min-width: @tablet-width) {
+      top: 104px;
+      left: 665px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 170px;
+      left: 903px;
+    }
+
+  }
+
+  &__group {
+    position:relative ;
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__group::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 1px;
+      left: 600px;
+      top: 30px;
+      background: #E5E5E5;
+      mix-blend-mode: normal;
+      }
+      @media (min-width: @desktop-width) {
+        width: 25%;
+        left: 800px;
+      }
+
+  }
+
+  &__group::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 1px;
+      left: 80px;
+      top: 30px;
+      background: #E5E5E5;
+      mix-blend-mode: normal;
+      }
+      @media (min-width: @desktop-width) {
+        width: 25%;
+        left: 100px;
+      }
+  }
+
+  &__group-container {
+    position: relative;
+    @media (min-width: @tablet-width) {
+      margin-top: 90px;
+      display: flex;
+    }
+  }
+
+  &__group-container::after {
+    @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.1%;
+    height: 380px;
+    left: 400px;
+    top: 20px;
+    background: #E5E5E5;
+    mix-blend-mode: normal;
+    }
+    @media (min-width: @desktop-width) {
+      left: 615px;
+    }
+  }
+
+  &__group-small {
+    padding-bottom: 10px;
+    @media (min-width: @tablet-width) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__group-small-checkbox {
+    @media (min-width: @tablet-width) {
+      width: 45%;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__group-container-checkbox {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      padding-left: 110px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 80px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  &__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    top: -15px;
+    background: #E5E5E5;
+    mix-blend-mode: normal;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+
+  &__label {
+    text-align: start;
+    padding-left: 30px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__form-input {
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 26px;
+    width: 260px;
+    height: 58px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+
+    @media (min-width: @desktop-width) {
+      width: 430px;
+
+    }
+  }
+
+  input::placeholder {
+    color: rgba(0, 0, 0, 1);
+    padding-left: 10px;
+  }
+
+  &__filter-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    padding-left: 30px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: stretch;
+      padding-left: 96px;
+    }
+
+    @media (min-width: @desktop-width) {
+      justify-content: space-between;
+      padding-right: 173px;
+
+
+    }
+
+  }
+
+  &__filter-item {
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+    }
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+
+  &__control-sights {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    padding: 16px;
+
+  }
+
+  &__control-input {
+    display: none;
+  }
+
+  &__radio-fake {
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    margin-right: 16px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 50%;
+  }
+
+  .form__radio-fake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .2s;
+  }
+
+  .form__control-input:checked+.form__radio-fake::before {
+    opacity: 1;
+  }
+
+  &__checkbox {
+    position: relative;
+    border: none;
+  }
+
+  &__checkbox::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 1px;
+      left: 600px;
+      top: 30px;
+      background: #E5E5E5;
+      mix-blend-mode: normal;
+      }
+      @media (min-width: @desktop-width) {
+        width: 25%;
+        left: 800px;
+      }
+  }
+
+  &__checkbox::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 1px;
+      left: 60px;
+      top: 30px;
+      background: #E5E5E5;
+      mix-blend-mode: normal;
+      }
+      @media (min-width: @desktop-width) {
+        width: 25%;
+        left: 100px;
+      }
+
+  }
+
+  &__checkbox-fake {
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(242, 242, 242, 1);
+    margin-right: 16px;
+  }
+
+  .form__checkbox-fake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 23px;
+    height: 16px;
+    background-image: url(../images/tick.svg);
+    opacity: 0;
+    transition: .2s;
+  }
+
+  .form__control-input:checked+.form__checkbox-fake::before {
+    opacity: 1;
+  }
+
+  &__text-area {
+    height: 150px;
+    width: 279px;
+    background-color: rgba(242, 242, 242, 1);
+    margin-bottom: 50px;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 80%;
+    }
+  }
+
+  &__text-area-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: @tablet-width) {
+      align-items: center;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+  }
+
+  &__text-area-container::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 1px;
+      left: 600px;
+      top: 30px;
+      background: #E5E5E5;
+      mix-blend-mode: normal;
+      }
+      @media (min-width: @desktop-width) {
+        width: 25%;
+        left: 800px;
+      }
+
+  }
+
+  &__text-area-container::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 1px;
+      left: 60px;
+      top: 30px;
+      background: #E5E5E5;
+      mix-blend-mode: normal;
+      }
+      @media (min-width: @desktop-width) {
+        width: 25%;
+        left: 100px;
+      }
+
+  }
+
+  &__text-area {
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 10px;
+    border: none;
+    @media (min-width: @desktop-width) {
+      padding-right: 200px;
+    }
+  }
+
+  &__feedback {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-left: 60px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 110px;
+      padding-right: 80px;
+    }
+  }
+
+  &__mandatory {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 15px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 35px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  &__button {
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 90%;
+    @media (min-width: @tablet-width) {
+      width: 45%;
+    }
+    @media (min-width: @desktop-width) {
+      width: 458px;
+    }
+  }
+}
+
+
