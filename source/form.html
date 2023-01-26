@@ -13,9 +13,10 @@
   <link rel="stylesheet/less" type="text/css" href="style.less">
   <script src="less.min.js" type="text/javascript"></script>
 </head>
-<div class="page__container">
 
-  <body class="page__body"><svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+<body class="body">
+  <div class="body__container">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol id="academy">
         <g>
           <path
@@ -72,17 +73,19 @@
       </symbol>
       <symbol id="phone" viewbox="-15 -15 48 48">
         <g>
-          <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z"/>
+          <path
+            d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" />
         </g>
       </symbol>
       <symbol id="mail" viewbox="-15 -15 48 48">
         <g>
-          <path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z"/>
+          <path
+            d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" />
         </g>
       </symbol>
     </svg>
     <header class="main-header"><a class="main-header__main-logo" href="http://localhost:3000/index.html">
-        <div class="main-header__main-logo-container"><svg width="200" height="96" alt="Логотип Sedona.">
+        <div class="main-header__main-logo-container"><svg width="200" height="96">
             <use href="#sedona"></use>
           </svg></div>
       </a>
@@ -90,10 +93,10 @@
             class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="index.html" ;>Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html" ;>Фото и видео</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
             <li class="site-list__item site-list__item--active"><a>Форма отзыва</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/study" ;>Html
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/study">Html
                 academy</a></li>
           </ul>
         </div>
@@ -102,9 +105,8 @@
     <main class="main-container">
       <section class="catalog-welcome">
         <picture>
-          <source media="(min-width: 768px)" srcset="images/catalog-welcome-tablet.png" width="457" height="77"
-            alt="Логотип Welcome."><img class="main-logo" src="images/catalog-welcome.png" width="229px" height="39px"
-            alt="Надпись Sedona.">
+          <source media="(min-width: 768px)" srcset="images/catalog-welcome-tablet.png" width="457" height="77">
+          <img class="main-logo" src="images/catalog-welcome.png" alt="Надпись Sedona.">
         </picture>
       </section>
       <section class="intro">
@@ -116,27 +118,27 @@
         <div class="form__group-container">
           <div class="form__group-small">
             <h3 class="form__title">Представьтесь:</h3>
-            <p class="form__label">Имя*: <label class="form__name-data"><input type="text" class="form__form-input"
-                  name="name" placeholder="Пётр"></label></p>
-            <p class="form__label">Фамилия*: <label class="form__name-data"><input type="text" class="form__form-input"
-                  name="surname" placeholder="Пустота"></label></p>
-            <p class="form__label">Отчество: <label class="form__name-data"><input type="text" class="form__form-input"
-                  name="lastname" placeholder="Викторович"></label></p>
+            <label class="form__label">Имя*:<input type="text" class="form__form-input" name="name"
+                placeholder="Пётр"></label>
+            <label class="form__label">Фамилия*:<input type="text" class="form__form-input" name="surname"
+                placeholder="Пустота"></label>
+            <label class="form__label">Отчество:<input type="text" class="form__form-input" name="lastname"
+                placeholder="Викторович"></label>
           </div>
           <div class="form__group-small">
             <h3 class="form__title">Контактная информация:</h3>
-            <p class="form__label">Контактный телефон*: <label class="form__phone"><input type="text"
-                  class="form__form-input" name="phone-number" placeholder="Введите телефон"></label>
-                  <svg class="form__phone-logo">
-                    <use href="#phone"></use>
-                  </svg>
-                </p>
-            <p class="form__label">Электронная почта*: <label class="form__email"><input type="text"
-                  class="form__form-input" name="mail" placeholder="Введите e-mail"></label>
-                  <svg class="form__mail-logo">
-                    <use href="#mail"></use>
-                  </svg>
-                </p>
+            <label class="form__label">Контактный телефон*:<input type="text" class="form__form-input"
+                name="phone-number" placeholder="Введите телефон"></label>
+            <svg class="form__phone-logo">
+              <use href="#phone"></use>
+            </svg>
+
+            <label class="form__label">Электронная почта*:<input type="text" class="form__form-input" name="mail"
+                placeholder="Введите e-mail"></label>
+            <svg class="form__mail-logo">
+              <use href="#mail"></use>
+            </svg>
+
           </div>
         </div>
         <div class="form__group">
@@ -161,7 +163,8 @@
                   class="form__checkbox-fake"></span> <span class="form__checkbox-text">Мост Дьявола</span></label>
               <label class="form__control-sights"><input class="form__control-input" type="checkbox" name="bridge"
                   checked="checked"> <span class="form__checkbox-fake"></span> <span
-                  class="form__checkbox-text">Гора-Колокол</span></label></div>
+                  class="form__checkbox-text">Гора-Колокол</span></label>
+            </div>
             <div class="form__group-small-checkbox"><label class="form__control-sights"><input
                   class="form__control-input" type="checkbox" name="bridge" checked="checked"> <span
                   class="form__checkbox-fake"></span> <span class="form__checkbox-text">Слайд-парк</span></label> <label
@@ -183,24 +186,24 @@
       <div class="footer__hashtag"><span>#visitsedona</span></div>
       <ul class="footer__social">
         <li class="footer__item"><a class="footer__link" href="https://vk.com/htmlacademy"><svg class="footer__icon"
-              width="48px" height="48px" alt="vkontakte.">
+              width="48px" height="48px">
               <use href="#vkontakte"></use>
             </svg> <span class="visually-hidden">vkontakte.</span></a></li>
         <li class="footer__item"><a class="footer__link" href="https://t.me/htmlacademy"><svg class="footer__icon"
-              width="48px" height="48px" alt="telegram.">
+              width="48px" height="48px">
               <use href="#telegram"></use>
             </svg> <span class="visually-hidden">telegram.</span></a></li>
         <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/user/htmlacademyru"><svg
-              class="footer__icon" width="48px" height="48px" alt="youtube.">
+              class="footer__icon" width="48px" height="48px">
               <use href="#youtube"></use>
             </svg> <span class="visually-hidden">youtube.</span></a></li>
       </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
         <span class="footer__text">Разработано</span>
-        <svg class="footer__icon" width="27px" height="33px" alt="htmlacademy.">
-              <use href="#academy"></use>
-            </svg>
-          </a>
+        <svg class="footer__icon" width="27px" height="33px">
+          <use href="#academy"></use>
+        </svg>
+      </a>
     </footer>
     <div class="modal modal--closed">
       <div class="modal__container">
@@ -216,12 +219,12 @@
         <section class="modal-feedback__content">
           <h3 class="modal-feedback__title">Ваш отзыв отправлен!</h3>
           <p class="modal-feedback__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-            опубликуем его на сайте.</p><a class="modal__button button" href="form.html">Закрыть окно</a>
+            опубликуем его на сайте.</p><a class="modal-feedback__button button" href="form.html">Закрыть окно</a>
         </section>
       </div>
     </div>
     <script src="js/script.js"></script>
-  </body>
-</div>
+  </div>
+</body>
 
 </html>
